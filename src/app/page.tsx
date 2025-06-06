@@ -1,8 +1,6 @@
 import Image from "next/image";
 import logo from "@/assets/images/Logo.png";
 import bg1 from "@/assets/images/BG1.jpg";
-import bg2 from "@/assets/images/BG2.png";
-import bg3 from "@/assets/images/BG3.jpg";
 import c1 from "@/assets/images/Courses Cover/CC1.jpg";
 import c2 from "@/assets/images/Courses Cover/CC2.jpg";
 import c3 from "@/assets/images/Courses Cover/CC3.jpg";
