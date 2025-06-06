@@ -49,7 +49,7 @@ export default function Home() {
 
         {/* Hero Section */}
         <section
-          className="relative bg-cover bg-bottom bg-no-repeat h-screen w-full mt-[-300px] absolute bottom-[-40px]"
+          className="relative bg-cover bg-bottom bg-no-repeat h-screen w-full mt-[-300px] bottom-[-40px]"
           style={{ backgroundImage: `url(${bg1.src})` }}
         >
 
