@@ -39,11 +39,13 @@ export default function Navbar() {
   return (
     <nav
       className={`z-50 flex items-center px-[32px] py-6 ${
-        scrolled ? 'bg-[#000000e6]/30 backdrop-blur-md' : 'bg-transparent'
+        scrolled ? 'bg-[#000000ef] ' : 'bg-[#00000095]'
       } shadow-md text-white h-[80px] fixed w-full transition-all duration-300`}
     >
       <div className="flex items-center w-full max-w-[1200px] mx-auto">
         {/* Logo */}
+      
+      <div className="flex items-center mr-auto gap-10">
         <a href="#" className="block">
           <Image
             src={logo}
@@ -53,15 +55,24 @@ export default function Navbar() {
           />
         </a>
 
-        {/* Desktop Navigation */}
-        <div className="flex items-center ml-auto gap-10">
-          <ul className="hidden md:flex gap-4 sm:gap-6 lg:gap-10 text-white font-[500] uppercase text-sm lg:text-base font-Poppins">
+       
+
+        <div>
+          <ul className="hidden md:flex gap-4 sm:gap-6 lg:gap-10 text-white font-[500] uppercase text-sm lg:text-base font-Poppins ">
             {navItems.map((item) => (
               <li key={item.id}>
-                <a href={item.path}>{item.label}</a>
+                <a className="hover:text-[#E55A2B]" href={item.path}>{item.label}</a>
               </li>
             ))}
           </ul>
+           </div>
+
+        </div>
+
+
+        {/* Desktop Navigation */}
+        <div className="flex items-center ml-auto gap-10">
+          
 
           <a
             href="#"
@@ -79,6 +90,21 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       {/* Mobile menu */}
       {menuOpen && (

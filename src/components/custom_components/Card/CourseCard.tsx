@@ -17,7 +17,7 @@ export default function CourseCard({ course }: { course: Course }) {
 
   return (
     <a href={course.href} className="w-full">
-      <div className="bg-white w-full md:h-[500px] rounded-2xl flex flex-col justify-between overflow-hidden">
+      <div className="bg-white w-full md:h-[500px] rounded-2xl flex flex-col justify-between overflow-hidden hover:scale-105 duration-300">
         <Image
           src={imageSrc}
           alt="Course Thumbnail"
