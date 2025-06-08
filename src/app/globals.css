@@ -6,3 +6,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
 
 
+.hero-bg {
+  background-image: url('../assets/images/hero-img-bg.jpg'); /* mobile default */
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 875px) {
+  .hero-bg {
+    background-image: url('../assets/images/BG1.jpg'); /* sm: and above */
+  }
+}

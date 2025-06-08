@@ -1,10 +1,11 @@
 import bg1 from "@/assets/images/BG1.jpg";
+import bg2 from "@/assets/images/hero-img-bg.jpg";
 
 export default function HeroSection() {
   return (
     <section
-      className="relative bg-cover bg-bottom bg-no-repeat h-screen w-full mt-[-300px] bottom-[-40px] !px-8"
-      style={{ backgroundImage: `url(${bg1.src})` }}
+      className="relative bg-cover bg-bottom bg-no-repeat h-screen w-full mt-[-160px] lg:mt-[-300px] bottom-[-40px] !px-8 font-Poppins hero-bg"
+     
     >
       {/* Overlay */}
       <div
@@ -20,10 +21,10 @@ export default function HeroSection() {
       {/* Hero Content */}
       <div className="relative z-10 flex items-center justify-between max-w-[1200px] mx-auto h-full">
         <div className="w-full md:w-[70%] text-white space-y-2 absolute lg:w-[50%] bottom-[100px]  lg:bottom-[300px]  md:bottom-[300px] ">
-          <h1 className="text-[32px] md:text-[68px] font-semibold leading-[65px] font-Poppins - lg:text-[68px]">
-            Learn from the Industry' Best
+          <h1 className="text-[32px] sm:text-[48px] md:text-[55px] lg:text-[60px] xl:text-[68px] font-semibold leading-[35px] sm:leading-[48px] md:leading-[65px]">
+            Learn from the  <br />  Industry' Best
           </h1>
-          <p className="text-[18px] md:text-[20px] leading-[30px] font-Poppins">
+          <p className="text-sm md:text-[20px]  md:leading-[30px] font-Poppins">
             Innovative online education for a successful <br /> career in the creative industries.
           </p>
 
