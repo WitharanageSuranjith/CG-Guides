@@ -3,7 +3,7 @@
 export default function HeroSection() {
   return (
     <section
-      className="relative bg-cover bg-bottom bg-no-repeat h-screen w-full mt-[-160px] lg:mt-[-300px] bottom-[-40px] !px-8 font-Poppins hero-bg"
+      className="relative bg-cover bg-bottom bg-no-repeat h-screen w-full font-Poppins hero-bg px-8"
      
     >
       {/* Overlay */}

@@ -21,7 +21,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="z-50 relative flex items-center justify-end px-[32px] py-6 bg-[#00000095] shadow-md text-white ">
+    <nav className="z-50 flex items-center  px-[32px] py-6 bg-[#00000095] shadow-md text-white  h-[80px] fixed w-full">
       <div className="flex items-center w-full max-w-[1200px] mx-auto">
         {/* Logo */}
         <a href="#" className="block">
