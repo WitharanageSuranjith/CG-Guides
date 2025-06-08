@@ -4,7 +4,7 @@ interface Course {
   id: number;
   title: string;
   description: string;
-  image: StaticImageData | string; 
+  image: StaticImageData | string;
   level: string;
   duration: string;
   href: string;
