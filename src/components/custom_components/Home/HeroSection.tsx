@@ -1,0 +1,56 @@
+import bg1 from "@/assets/images/BG1.jpg";
+
+export default function HeroSection() {
+  return (
+    <section
+      className="relative bg-cover bg-bottom bg-no-repeat h-screen w-full mt-[-300px] bottom-[-40px] !px-8"
+      style={{ backgroundImage: `url(${bg1.src})` }}
+    >
+      {/* Overlay */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          background: `
+            linear-gradient(to top, #0404041A, #ffffff00),
+            linear-gradient(to right, #000000c9, #feb00000)
+          `
+        }}
+      ></div>
+
+      {/* Hero Content */}
+      <div className="relative z-10 flex items-center justify-between max-w-[1200px] mx-auto h-full">
+        <div className="w-full md:w-[70%] text-white space-y-2 absolute lg:w-[50%] bottom-[100px]  lg:bottom-[300px]  md:bottom-[300px] ">
+          <h1 className="text-[32px] md:text-[68px] font-semibold leading-[65px] font-Poppins - lg:text-[68px]">
+            Learn from the Industry' Best
+          </h1>
+          <p className="text-[18px] md:text-[20px] leading-[30px] font-Poppins">
+            Innovative online education for a successful <br /> career in the creative industries.
+          </p>
+
+          <h2 className="text-[#FF6B35] text-[18px] font-bold leading-[30px] font-Poppins">
+            First time around here?
+          </h2>
+
+          <div className="flex items-center gap-6">
+            <a
+              href="/login"
+              className="px-6 py-2 bg-[#E55A2B] text-white rounded-[6px] hover:text-[#000] font-medium transition font-Poppins"
+            >
+              START HERE
+            </a>
+            <a
+              href="/login"
+              className="text-white text-[18px] font-bold transition font-Poppins"
+            >
+              Courses →
+            </a>
+          </div>
+        </div>
+
+        <div className="hidden md:block w-[50%]">
+          {/* Character image or graphic can be placed here */}
+        </div>
+      </div>
+    </section>
+  );
+}
