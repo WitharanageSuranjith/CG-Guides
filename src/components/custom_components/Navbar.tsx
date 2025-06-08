@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import logo from "@/assets/images/Logo.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -20,8 +21,27 @@ export default function Navbar() {
     { id: "blog", label: "Blog", path: "#" },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="z-50 flex items-center  px-[32px] py-6 bg-[#00000095] shadow-md text-white  h-[80px] fixed w-full">
+    <nav
+      className={`z-50 flex items-center px-[32px] py-6 ${
+        scrolled ? 'bg-[#000000e6]/30 backdrop-blur-md' : 'bg-transparent'
+      } shadow-md text-white h-[80px] fixed w-full transition-all duration-300`}
+    >
       <div className="flex items-center w-full max-w-[1200px] mx-auto">
         {/* Logo */}
         <a href="#" className="block">
@@ -35,19 +55,13 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <div className="flex items-center ml-auto gap-10">
-          <ul className="hidden md:flex gap-4 sm:gap-6 lg:gap-10 text-white font-[500] uppercase text-sm lg:text-base font-Poppins" >
+          <ul className="hidden md:flex gap-4 sm:gap-6 lg:gap-10 text-white font-[500] uppercase text-sm lg:text-base font-Poppins">
             {navItems.map((item) => (
               <li key={item.id}>
                 <a href={item.path}>{item.label}</a>
               </li>
             ))}
           </ul>
-
-
-
-
-
-
 
           <a
             href="#"
@@ -60,7 +74,7 @@ export default function Navbar() {
           <div className="md:hidden ml-4">
             <GiHamburgerMenu
               onClick={toggleMenu}
-              className="text-white w-6 h-6 cursor-pointer "
+              className="text-white w-6 h-6 cursor-pointer"
             />
           </div>
         </div>
@@ -76,12 +90,12 @@ export default function Navbar() {
               className="cursor-pointer text-white"
             />
           </div>
-          
+
           <ul className="flex flex-col gap-6 text-white uppercase text-lg">
             {navItems.map((item) => (
               <li key={item.id}>
-                <a 
-                  href={item.path} 
+                <a
+                  href={item.path}
                   className="block py-2 hover:text-[rgb(229,90,43)] transition"
                   onClick={toggleMenu}
                 >
