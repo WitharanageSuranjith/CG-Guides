@@ -5,7 +5,7 @@ import LearningIntro from "@/components/custom_components/Home/LearningIntro";
 import CuratedTracks from "@/components/custom_components/Home/CuratedTracks";
 import GuidanceSection from "@/components/custom_components/Home/GuidanceSection";
 import StudentShowcase from "@/components/custom_components/Home/StudentShowcase";
-import Navbar from "@/components/custom_components/Navbar";
+
 
 export default function Home() {
   return (
