@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -15,7 +16,7 @@ export default function Navbar() {
   };
 
   const navItems = [
-    { id: "courses", label: "Our Courses", path: "#" },
+    { id: "courses", label: "Our Courses", path: "/courses" },
     { id: "community", label: "Community", path: "#" },
     { id: "academies", label: "Academies", path: "#" },
     { id: "blog", label: "Blog", path: "#" },
@@ -23,7 +24,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 50) { 
         setScrolled(true);
       } else {
         setScrolled(false);
