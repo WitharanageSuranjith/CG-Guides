@@ -6,10 +6,18 @@ export default function LearningIntro() {
           <h2 className="text-[#ffffff] text-[16px] font-bold leading-[30px] mb-[10px] font-Poppins - lg:text-[18px] lg:leading-[30px] ">
             Start Learning Online
           </h2>
-          <h1 className="text-2xl md:text3xl  font-semibold leading-7 sm:text-leading-9 text-[#E55A2B] font-Poppins - lg:text-[40px] lg:leading-[50px]">
+          <h1 className="font-semibold text-[#E55A2B] font-Poppins - 
+          text-[24px]  sm:text-[24px] md:text-[24px] lg:text-[34px] xl:text-[40px]
+          leading-[30px]  sm:leading-[30px] md:leading-[30px] lg:leading-[42.5px] xl:leading-[50px]  ">
             Choose your journey for the best experience and results.
           </h1>
-          <div className=" text-[#fff] text-[12px] sm:leading-[40px] mt-[5px] font-Poppins - lg:text-[18px] lg:leading-[40px]">
+
+
+          <div className=" text-[#fff]  mt-[5px] font-Poppins -
+            text-[11px] xs:text-[12px] lg:text-[14px] xl:text-[18px] 
+            leading-[22px] xs:leading-[24px] lg:leading-[28px] xl:leading-[36px]">
+
+
             <li>Expert training from industry professionals</li>
             <li>Collaborative virtual classroom</li>
             <li>Personalized expert feedback and live Q&A</li>
@@ -35,3 +43,5 @@ export default function LearningIntro() {
     </section>
   );
 }
+
+

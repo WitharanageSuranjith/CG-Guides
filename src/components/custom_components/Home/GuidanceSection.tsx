@@ -16,12 +16,12 @@ export default function GuidanceSection() {
       <div className="relative z-10 max-w-[1200px] w-full flex flex-col lg:flex-row gap-8 items-center justify-between">
         {/* Left: Text & Form */}
         <div className="flex-1 max-w-[600px] text-white">
-          <h1 className="text-4xl md:text-5xl font-bold mb-2 text-[#FF6B35]">
+          <h1 className="font-semibold text-[#E55A2B] font-Poppins - ">
             Need guidance?
             <br />
             <span className="text-[#FF6B35]">Were here to help.</span>
           </h1>
-          <p className="text-lg md:text-xl font-medium mb-8 text-white">
+          <p className="font-medium text-[#fff] text-sm md:text-[18px]  md:leading-[30px] font-Poppins pb-[10px] ">
             From admission to payment plans to course recommendations, we ll
             point you in the right direction.
           </p>
@@ -56,6 +56,19 @@ export default function GuidanceSection() {
                 className="w-full rounded-md bg-[#333]/80 text-white px-4 py-3 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#FF6B35]"
               />
             </div>
+
+
+
+               <div className="pt-[20px]">
+               <a
+              href="/login"
+              className="px-6 py-2 bg-[#E55A2B] text-white rounded-[6px] hover:text-[#000] font-medium transition font-Poppins"
+            >
+              CONTINUE
+            </a>
+            </div>
+
+
           </form>
         </div>
         {/* Right: Placeholder Rectangle */}

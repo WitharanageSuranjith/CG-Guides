@@ -39,6 +39,7 @@ const config: Config = {
         "4xl": "2rem",
       },
       screens: {
+
         "xs": "480px",
         "sm": "640px",
         "md": "768px",
