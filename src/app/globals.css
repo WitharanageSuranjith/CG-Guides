@@ -7,7 +7,7 @@
 
 
 .hero-bg {
-  background-image: url('../assets/images/hero-img-bg.jpg'); /* mobile default */
+  background-image: url('../assets/images/Background/hero-img-mb.jpg'); /* mobile default */
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -15,6 +15,6 @@
 
 @media (min-width: 875px) {
   .hero-bg {
-    background-image: url('../assets/images/BG1.jpg'); /* sm: and above */
+    background-image: url('../assets/images/Background/hero-img.jpg'); /* sm: and above */
   }
 }

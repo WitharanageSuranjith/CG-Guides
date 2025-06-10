@@ -1,5 +1,5 @@
 
-import bg1 from "@/assets/images/BG3.png";
+import bg1 from "@/assets/images/Background/BG3.png";
 
 export default function GuidanceSection() {
   return (
