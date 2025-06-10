@@ -4,7 +4,7 @@ import bg1 from "@/assets/images/Background/BG3.png";
 export default function GuidanceSection() {
   return (
     <section
-      className="relative w-full lg:min-h-[600px] flex items-center justify-center px-8 py-12"
+      className="relative w-full md:min-h-[600px] flex items-center justify-center px-8 py-12"
       style={{
         backgroundImage: `url(${bg1.src})`,
         backgroundSize: "cover",
