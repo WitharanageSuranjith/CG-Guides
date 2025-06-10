@@ -4,7 +4,7 @@ import bg1 from "@/assets/images/Background/BG3.png";
 export default function GuidanceSection() {
   return (
     <section
-      className="relative w-full min-h-[600px] flex items-center justify-center px-8 py-12"
+      className="relative w-full lg:min-h-[600px] flex items-center justify-center px-8 py-12"
       style={{
         backgroundImage: `url(${bg1.src})`,
         backgroundSize: "cover",
@@ -16,7 +16,9 @@ export default function GuidanceSection() {
       <div className="relative z-10 max-w-[1200px] w-full flex flex-col lg:flex-row gap-8 items-center justify-between">
         {/* Left: Text & Form */}
         <div className="flex-1 max-w-[600px] text-white">
-          <h1 className="font-semibold text-[#E55A2B] font-Poppins - ">
+          <h1 className=" font-semibold text-[#E55A2B] font-Poppins - 
+          text-[24px]  sm:text-[24px] md:text-[24px] lg:text-[34px] xl:text-[40px]
+          leading-[30px]  sm:leading-[30px] md:leading-[30px] lg:leading-[42.5px] xl:leading-[50px]  ">
             Need guidance?
             <br />
             <span className="text-[#FF6B35]">Were here to help.</span>

@@ -1,7 +1,7 @@
 export default function LearningIntro() {
   return (
     <section className="relative bg-auto bg-bottom bg-[#181818] bg-no-repeat h-auto w-full py-[80px] px-8">
-      <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-[15px] max-w-[1200px] mx-auto w-full h-full">
+      <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-[15px] max-w-[1200px] mx-auto w-full h-full">
         <div className="lg:w-[38%] ">
           <h2 className="text-[#ffffff] text-[16px] font-bold leading-[30px] mb-[10px] font-Poppins - lg:text-[18px] lg:leading-[30px] ">
             Start Learning Online
@@ -43,5 +43,6 @@ export default function LearningIntro() {
     </section>
   );
 }
+
 
 
