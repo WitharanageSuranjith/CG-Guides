@@ -3,7 +3,7 @@
 export default function HeroSection() {
   return (
     <section
-      className="relative bg-cover bg-bottom bg-no-repeat h-screen w-full font-Poppins hero-bg px-8"
+      className="relative bg-cover bg-bottom bg-no-repeat h-screen w-full font-Poppins hero-bg  px-8"
      
     >
       {/* Overlay */}
@@ -18,8 +18,8 @@ export default function HeroSection() {
       ></div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex items-center justify-between max-w-[1200px] mx-auto h-full">
-        <div className="w-full md:w-[70%] text-white space-y-2 absolute lg:w-[50%] bottom-[100px]  lg:bottom-[300px]  md:bottom-[300px] ">
+      <div className="relative z-10 flex items-center justify-between max-w-[1200px] mx-auto h-full ">
+        <div className="w-full md:w-[70%] text-white space-y-2 absolute lg:w-[50%] bottom-[100px] md:bottom-[100px] lg:bottom-[150px] xl:bottom-[300px]   ">
           <h1 className="text-[32px] sm:text-[48px] md:text-[55px] lg:text-[60px] xl:text-[68px] font-semibold leading-[35px] sm:leading-[48px] md:leading-[65px]">
             Learn from the  <br />  Industry&apos; Best
           </h1>
@@ -31,16 +31,16 @@ export default function HeroSection() {
             First time around here?
           </h2>
 
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 ">
             <a
               href="/login"
-              className="px-6 py-2 bg-[#E55A2B] text-white rounded-[6px] hover:text-[#000] font-medium transition font-Poppins"
+              className="px-6 py-2 bg-[#E55A2B] text-white rounded-[6px] hover:text-[#000] font-medium transition font-Poppins text-[14px] xs:text-[16px]"
             >
               START HERE
             </a>
             <a
               href="/login"
-              className="text-white text-[18px] font-bold transition font-Poppins"
+              className="text-white  font-bold transition font-Poppins text-[16px] xs:text-[18px]"
             >
               Courses →
             </a>

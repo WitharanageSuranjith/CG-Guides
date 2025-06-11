@@ -23,7 +23,15 @@ export default function GuidanceSection() {
             <br />
             <span className="text-[#FF6B35]">Were here to help.</span>
           </h1>
-          <p className="font-medium text-[#fff] text-sm md:text-[18px]  md:leading-[30px] font-Poppins pb-[10px] ">
+          <p className="
+          
+          
+           text-[#fff]  mt-[5px] font-Poppins -
+            text-[11px] xs:text-[12px] lg:text-[14px] xl:text-[18px] 
+            leading-[22px] xs:leading-[24px] lg:leading-[28px] xl:leading-[36px]
+          
+          
+          ">
             From admission to payment plans to course recommendations, we ll
             point you in the right direction.
           </p>
