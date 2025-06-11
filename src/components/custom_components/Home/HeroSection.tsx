@@ -19,7 +19,7 @@ export default function HeroSection() {
 
       {/* Hero Content */}
       <div className="relative z-10 flex items-center justify-between max-w-[1200px] mx-auto h-full ">
-        <div className="w-full md:w-[70%] text-white space-y-2 absolute lg:w-[50%] bottom-[100px] md:bottom-[100px] lg:bottom-[150px] xl:bottom-[300px]   ">
+        <div className="w-full md:w-[70%] text-white space-y-2 absolute lg:w-[50%] bottom-[100px] md:bottom-[100px] lg:bottom-[200px] xl:bottom-[300px]   ">
           <h1 className="text-[32px] sm:text-[48px] md:text-[55px] lg:text-[60px] xl:text-[68px] font-semibold leading-[35px] sm:leading-[48px] md:leading-[65px]">
             Learn from the  <br />  Industry&apos; Best
           </h1>
