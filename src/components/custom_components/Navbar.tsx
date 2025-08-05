@@ -79,7 +79,7 @@ export default function Navbar() {
             href="log-in"
             className="px-6 py-[6px] bg-white text-black rounded-full hover:bg-[#E55A2B] font-medium transition hidden md:block font-Poppins"
           >
-            Login.
+            Login
           </a>
 
           {/* Mobile hamburger menu button */}
