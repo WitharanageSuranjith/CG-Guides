@@ -1,5 +1,4 @@
 import CourseCard from "@/components/custom_components/Card/CourseCard";
-import FeaturedCourses from "@/components/custom_components/Home/FeaturedCourses";
 
 import c1 from "@/assets/images/Courses Cover/CC1.jpg";
 import c2 from "@/assets/images/Courses Cover/CC2.jpg";
