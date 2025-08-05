@@ -39,7 +39,7 @@ export default function HeroSection() {
               START HERE
             </a>
             <a
-              href="/login"
+              href="/courses"
               className="text-white  font-bold transition font-Poppins text-[16px] xs:text-[18px]"
             >
               Courses →
