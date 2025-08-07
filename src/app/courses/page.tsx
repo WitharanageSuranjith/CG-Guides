@@ -8,6 +8,7 @@ import c3 from "@/assets/images/Courses Cover/CC3.jpg";
 import c4 from "@/assets/images/Courses Cover/CC4.jpg";
 import heroImg from "@/assets/images/Background/course-bg.webp";
 import FilterHeroSection from "@/components/custom_components/Home/FliterHeroSection";
+import { StaticImageData } from "next/image";
 
 type CourseCategory = 
   | 'all' 
@@ -24,7 +25,7 @@ interface Course {
   id: number;
   title: string;
   description: string;
-  image: any;
+  image: StaticImageData; 
   level: string;
   duration: string;
   href: string;
@@ -199,8 +200,8 @@ export default function HomePage() {
           {filteredCourses.length === 0 ? (
             <div className="text-center py-28">
               <h3 className="text-2xl font-bold text-white">No courses available</h3>
-              <p className="text-gray-400 mt-2">
-                We couldn't find any courses in this category. Try another filter.
+             <p className="text-gray-400 mt-2">
+                We couldn&apos;t find any courses in this category. Try another filter.
               </p>
             </div>
           ) : (
