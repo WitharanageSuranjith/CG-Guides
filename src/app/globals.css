@@ -20,3 +20,20 @@
     padding-top: 100px;
   }
 }
+
+.max-width-container {
+  max-width: 1440px;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid red; */
+}
+
+/* mobile screen (before 778px) */
+@media (max-width: 777px) {
+  .max-width-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
