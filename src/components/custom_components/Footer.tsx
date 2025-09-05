@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import FooterLogo from "../../assets/images/Logo/FooterLogo.png";
 import Image from "next/image";
+import Link from "next/link";
 
 interface FooterProps {
   className?: string;
@@ -74,28 +75,28 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
                 </h3>
                 <ul className="space-y-3">
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white text-sm transition-colors"
                     >
                       Challenges
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white text-sm transition-colors"
                     >
                       Industry News
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white text-sm transition-colors"
                     >
                       Marketplace
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -107,36 +108,36 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
                 </h3>
                 <ul className="space-y-3">
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white text-sm transition-colors"
                     >
                       Academic Calendar
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white text-sm transition-colors"
                     >
                       Tracks
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white text-sm transition-colors"
                     >
                       Courses
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white text-sm transition-colors"
                     >
                       Gift
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -148,28 +149,28 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
                 </h3>
                 <ul className="space-y-3">
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white text-sm transition-colors"
                     >
                       CG Guides
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white text-sm transition-colors"
                     >
                       How It Works
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white text-sm transition-colors"
                     >
                       Contact Us
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -181,52 +182,52 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
                 </h3>
                 <ul className="space-y-3">
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white text-sm transition-colors"
                     >
                       Course Guide
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white text-sm transition-colors"
                     >
                       Portfolio Review
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white text-sm transition-colors"
                     >
                       Tuition Aid
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white text-sm transition-colors"
                     >
                       FAQ
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white text-sm transition-colors"
                     >
                       Refund
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white text-sm transition-colors"
                     >
                       Blog
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -237,48 +238,48 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
         <div className="w-full flex justify-end">
           <div className="w-full lg:w-fit">
             <div className="flex justify-center space-x-6">
-              <a
+              <Link
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <FaTwitter className="w-5 h-5" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <FaFacebook className="w-5 h-5" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <FaInstagram className="w-5 h-5" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <FaTiktok className="w-5 h-5" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <FaWhatsapp className="w-5 h-5" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <FaYoutube className="w-5 h-5" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <FaDiscord className="w-5 h-5" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

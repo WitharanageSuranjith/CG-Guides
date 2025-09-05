@@ -1,5 +1,6 @@
 
 import bg1 from "@/assets/images/Background/BG3.png";
+import Link from "next/link";
 
 export default function GuidanceSection() {
   return (
@@ -70,12 +71,12 @@ export default function GuidanceSection() {
 
 
                <div className="pt-[20px]">
-               <a
+               <Link
               href="/login"
               className="px-6 py-2 bg-[#E55A2B] text-white rounded-[6px] hover:text-[#000] font-medium transition font-Poppins"
             >
               CONTINUE
-            </a>
+            </Link>
             </div>
 
 

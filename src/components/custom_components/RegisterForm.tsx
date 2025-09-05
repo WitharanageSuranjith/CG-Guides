@@ -4,6 +4,7 @@ import React, { useState, ChangeEvent } from "react";
 import { Eye, EyeOff } from "lucide-react";
 import Image from "next/image";
 import logo from "@/assets/images/Logo.png";
+import Link from "next/link";
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState({
@@ -40,14 +41,14 @@ const RegisterForm = () => {
         {/* Logo */}
         <div className="flex items-center justify-center mb-6">
           <div className="flex items-center space-x-2">
-            <a href="#" className="block">
+            <Link href="#" className="block">
               <Image
                 src={logo}
                 alt="Logo"
                 className="w-[150px] lg:w-[200px] h-auto"
                 priority
               />
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -167,12 +168,12 @@ const RegisterForm = () => {
             />
             <label htmlFor="terms" className="ml-2 text-white text-sm">
               I have read and agree to the{" "}
-              <a
+              <Link
                 href="#"
                 className="text-orange-500 hover:text-orange-400 transition-colors underline"
               >
                 Terms of Service
-              </a>
+              </Link>
             </label>
           </div>
 
@@ -237,12 +238,12 @@ const RegisterForm = () => {
         {/* Login Link */}
         <p className="text-center text-gray-400 text-sm">
           Already have an account?{" "}
-          <a
+          <Link
             href="/log-in"
             className="text-orange-500 hover:text-orange-400 transition-colors"
           >
             Log in
-          </a>
+          </Link>
         </p>
       </div>
     </div>

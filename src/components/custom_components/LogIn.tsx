@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
 import Image from "next/image";
 import logo from "@/assets/images/Logo.png";
+import Link from "next/link";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("johndoe@gmail.com");
@@ -19,14 +20,14 @@ const LoginForm = () => {
       <div className=" rounded-2xl p-10 w-full max-w-md ">
         {/* Logo */}
         <div className="flex items-center justify-center mb-8">
-          <a href="#" className="block">
+          <Link href="#" className="block">
             <Image
               src={logo}
               alt="Logo"
               className="w-[150px] lg:w-[200px] h-auto"
               priority
             />
-          </a>
+          </Link>
         </div>
 
         {/* Header */}
@@ -89,12 +90,12 @@ const LoginForm = () => {
               />
               <span className="ml-2 text-white text-sm">Remember me</span>
             </label>
-            <a
+            <Link
               href="#"
               className="text-white text-sm hover:text-orange-500 transition-colors"
             >
               Forgot Password?
-            </a>
+            </Link>
           </div>
 
           {/* Login Button */}
@@ -158,12 +159,12 @@ const LoginForm = () => {
         {/* Sign Up Link */}
         <p className="text-center text-gray-400 text-sm">
           Don&apos;t have an account?{" "}
-          <a
+          <Link
             href="/register"
             className="text-orange-500 hover:text-orange-400 transition-colors"
           >
             Sign Up
-          </a>
+          </Link>
         </p>
       </div>
     </div>
