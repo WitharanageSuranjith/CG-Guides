@@ -1,4 +1,3 @@
-// components/custom_components/Home/FilterHeroSection.tsx
 import React from "react";
 import { Button } from "@/components/ui/button";
 
@@ -12,7 +11,7 @@ interface FilterHeroSectionProps {
   backgroundImage: string;
   title: React.ReactNode;
   subtitle: string;
-  filterOptions: FilterOption[];
+  filterOptions?: FilterOption[];
   onFilterChange?: (id: string) => void;
 }
 
@@ -45,22 +44,24 @@ const FilterHeroSection: React.FC<FilterHeroSectionProps> = ({
           </p>
           
           {/* Filter Buttons */}
-          <div className="flex flex-wrap gap-2">
-            {filterOptions.map((option) => (
-              <Button
-                key={option.id}
-                variant={option.active ? "default" : "outline"}
-                onClick={() => onFilterChange?.(option.id)}
-                className={`px-4 text-sm font-medium rounded-full transition-all ${
-                  option.active 
-                    ? "bg-white text-black hover:bg-gray-100 shadow-lg" 
-                    : "bg-transparent text-gray-200 hover:bg-white/10 hover:text-white border-0"
-                }`}
-              >
-                {option.label}
-              </Button>
-            ))}
-          </div>
+          {filterOptions && filterOptions.length > 0 && (
+            <div className="flex flex-wrap gap-2">
+              {filterOptions.map((option) => (
+                <Button
+                  key={option.id}
+                  variant={option.active ? "default" : "outline"}
+                  onClick={() => onFilterChange?.(option.id)}
+                  className={`px-4 text-sm font-medium rounded-full transition-all ${
+                    option.active 
+                      ? "bg-white text-black hover:bg-gray-100 shadow-lg" 
+                      : "bg-transparent text-gray-200 hover:bg-white/10 hover:text-white border-0"
+                  }`}
+                >
+                  {option.label}
+                </Button>
+              ))}
+            </div>
+          )}
         </div>
       </div>
       

@@ -14,7 +14,7 @@ const courses = [
     image: c1,
     level: "Intermediate",
     duration: "16 Week",
-    href: "/course1",
+    href: "/1",
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const courses = [
     image: c2,
     level: "Beginner - Intermediate",
     duration: "20 Week",
-    href: "/course2",
+    href: "/1",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const courses = [
     image: c3,
     level: "Intermediate - Advanced",
     duration: "12 Week",
-    href: "/course3",
+    href: "/1",
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const courses = [
     image: c4,
     level: "Advanced",
     duration: "8 Week",
-    href: "/course4",
+    href: "/1",
   },
 ];
 
