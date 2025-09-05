@@ -1,7 +1,5 @@
 import c1 from "@/assets/images/Courses Cover/CC1.jpg";
 import c2 from "@/assets/images/Courses Cover/CC2.jpg";
-import c3 from "@/assets/images/Courses Cover/CC3.jpg";
-import c4 from "@/assets/images/Courses Cover/CC4.jpg";
 import { Course } from "@/types/data";
 import { Award, BookOpen, Clock, MessageSquare, Play, Users } from "lucide-react";
 

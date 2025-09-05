@@ -1,11 +1,11 @@
 'use client';
 
+import { LucideIcon } from 'lucide-react';
 import Image from 'next/image';
-import { Clock, Users, BookOpen, MessageSquare, Play, Award } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa6';
 
 interface CourseInfo {
-  icon: any;
+  icon: LucideIcon;
   label: string;
   value: string;
 }
@@ -44,7 +44,7 @@ const CourseInfoItem = ({
   label, 
   value 
 }: { 
-  icon: any; 
+  icon: LucideIcon; 
   label: string; 
   value: string; 
 }) => (

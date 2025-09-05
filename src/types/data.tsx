@@ -1,3 +1,4 @@
+import { LucideIcon } from "lucide-react";
 import { StaticImageData } from "next/image";
 
 export interface Course {
@@ -14,7 +15,7 @@ export interface Course {
     title: string;
     subtitle: string;
     description: string;
-    courseInfo: Array<{ icon: any; label: string; value: string }>;
+    courseInfo: Array<{ icon: LucideIcon; label: string; value: string }>;
     assignment: { title: string; description: string };
     prerequisites: { title: string; description: string };
     tools: { title: string; description: string };
