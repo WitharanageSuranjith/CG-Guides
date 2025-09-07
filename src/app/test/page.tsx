@@ -1,10 +1,10 @@
 'use client';
 
-import CourseHero from '@/components/custom_components/Course/CourseHero';
-import CourseCurriculum from '@/components/custom_components/Course/CourseCurriculum';
-import Testimonials from '@/components/custom_components/Course/Testimonials';
-import StudentResults from '@/components/custom_components/Course/StudentResults';
-import FilterHeroSection from '@/components/custom_components/Home/FliterHeroSection';
+import CourseHero from '@/components/custom_components/Course/CoursePost/CourseHero';
+import CourseCurriculum from '@/components/custom_components/Course/CoursePost/CourseCurriculum';
+import Testimonials from '@/components/custom_components/Course/CoursePost/Testimonials';
+import StudentResults from '@/components/custom_components/Course/CoursePost/StudentResults';
+import FilterHeroSection from '@/components/custom_components/Course/CourseList/FliterHeroSection';
 import heroImg from '@/assets/images/Background/course-bg.webp';
 import { Clock, Users, BookOpen, MessageSquare, Play, Award } from 'lucide-react';
 
