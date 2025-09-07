@@ -28,8 +28,8 @@ const ImageCard = ({ work, className, index }: { work: StudentWork; className: s
     >
       <div className="relative w-full h-full min-h-[200px]">
         <Image
-          src={work.image}
-          alt={work.title}
+          src={work?.image}
+          alt={work?.title}
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-110"
           sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
@@ -40,8 +40,8 @@ const ImageCard = ({ work, className, index }: { work: StudentWork; className: s
         
         {/* Content overlay */}
         <div className="absolute bottom-0 left-0 right-0 p-3 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <h4 className="font-bold text-xs sm:text-sm mb-1">{work.title}</h4>
-          <p className="text-gray-300 text-xs">by {work.student}</p>
+          <h4 className="font-bold text-xs sm:text-sm mb-1">{work?.title}</h4>
+          <p className="text-gray-300 text-xs">by {work?.student}</p>
         </div>
       </div>
     </motion.div>
