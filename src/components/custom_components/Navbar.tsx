@@ -1,11 +1,11 @@
 'use client'
 
 import Image from "next/image";
+import Link from "next/link";
 import logo from "@/assets/images/Logo.png";
 import { useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
-
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,51 +39,47 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`z-50 flex items-center px-[32px] py-6 ${
-        scrolled ? 'bg-[#000000ef] ' : 'bg-[#00000095]'
-      } shadow-md text-white h-[80px] fixed w-full transition-all duration-300`}
+      className={`z-50 flex items-center px-[32px] py-6 fixed w-full ${
+        scrolled ? 'bg-[#000000ef]' : 'bg-[#000000ef]/90 backdrop-blur-sm'
+      } shadow-md text-white h-[80px] transition-all duration-300`}
     >
       <div className="flex items-center w-full max-w-[1200px] mx-auto">
         {/* Logo */}
-      
-      <div className="flex items-center mr-auto gap-10">
-        <a href="#" className="block">
-          <Image
-            src={logo}
-            alt="Logo"
-            className="w-[150px] lg:w-[200px] h-auto"
-            priority
-          />
-        </a>
+        <div className="flex items-center mr-auto gap-10">
+          <Link href="/" className="block">
+            <Image
+              src={logo}
+              alt="Logo"
+              className="w-[150px] lg:w-[200px] h-auto"
+              priority
+            />
+          </Link>
 
-       
-
-        <div>
-          <ul className="hidden md:flex gap-4 sm:gap-6 lg:gap-10 text-white font-[500] uppercase text-sm lg:text-base font-Poppins ">
-            {navItems.map((item) => (
-              <li key={item.id}>
-                <a className="hover:text-[#E55A2B]" href={item.path}>{item.label}</a>
-              </li>
-            ))}
-          </ul>
-           </div>
-
+          {/* Desktop Navigation */}
+          <div>
+            <ul className="hidden md:flex gap-4 sm:gap-6 lg:gap-10 text-white font-[500] uppercase text-sm lg:text-base font-Poppins">
+              {navItems.map((item) => (
+                <li key={item.id}>
+                  <Link className="hover:text-[#E55A2B] transition-colors" href={item.path}>
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
-
-        {/* Desktop Navigation */}
-        <div className="flex items-center ml-auto gap-10">
-          
-
-          <a
-            href="#"
-            className="px-6 py-[6px] bg-white text-black rounded-full hover:bg-[#E55A2B] font-medium transition hidden md:block font-Poppins"
+        {/* Desktop Login Button and Mobile Menu Toggle */}
+        <div className="flex items-center ml-auto gap-4">
+          <Link
+            href="/log-in"
+            className="px-6 py-[6px] bg-white text-black rounded-full hover:bg-[#E55A2B] hover:text-white font-medium transition-colors hidden md:block font-Poppins"
           >
             Login
-          </a>
+          </Link>
 
           {/* Mobile hamburger menu button */}
-          <div className="md:hidden ml-4">
+          <div className="md:hidden">
             <GiHamburgerMenu
               onClick={toggleMenu}
               className="text-white w-6 h-6 cursor-pointer"
@@ -91,21 +87,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       {/* Mobile menu */}
       {menuOpen && (
@@ -121,23 +102,23 @@ export default function Navbar() {
           <ul className="flex flex-col gap-6 text-white uppercase text-lg">
             {navItems.map((item) => (
               <li key={item.id}>
-                <a
+                <Link
                   href={item.path}
-                  className="block py-2 hover:text-[rgb(229,90,43)] transition"
+                  className="block py-2 hover:text-[#E55A2B] transition-colors"
                   onClick={toggleMenu}
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
             <li>
-              <a
-                href="#"
-                className="block px-6 py-[6px] bg-white text-black rounded-full hover:bg-[#E55A2B] font-medium transition w-fit font-Poppins"
+              <Link
+                href="/log-in"
+                className="block px-6 py-[6px] bg-white text-black rounded-full hover:bg-[#E55A2B] hover:text-white font-medium transition-colors w-fit font-Poppins"
                 onClick={toggleMenu}
               >
                 Login
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

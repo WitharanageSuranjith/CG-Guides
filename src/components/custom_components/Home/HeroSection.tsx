@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 export default function HeroSection() {
@@ -32,18 +33,18 @@ export default function HeroSection() {
           </h2>
 
           <div className="flex items-center gap-6 ">
-            <a
+            <Link
               href="/login"
               className="px-6 py-2 bg-[#E55A2B] text-white rounded-[6px] hover:text-[#000] font-medium transition font-Poppins text-[14px] xs:text-[16px]"
             >
               START HERE
-            </a>
-            <a
-              href="/login"
+            </Link>
+            <Link
+              href="/courses"
               className="text-white  font-bold transition font-Poppins text-[16px] xs:text-[18px]"
             >
               Courses →
-            </a>
+            </Link>
           </div>
         </div>
 

@@ -3,6 +3,7 @@ import c2 from "@/assets/images/Courses Cover/CC2.jpg";
 import c3 from "@/assets/images/Courses Cover/CC3.jpg";
 import c4 from "@/assets/images/Courses Cover/CC4.jpg";
 import CourseCard from "@/components/custom_components/Card/CourseCard";
+import Link from "next/link";
 
 
 const courses = [
@@ -14,7 +15,7 @@ const courses = [
     image: c1,
     level: "Intermediate",
     duration: "16 Week",
-    href: "/course1",
+    href: "/1",
   },
   {
     id: 2,
@@ -24,7 +25,7 @@ const courses = [
     image: c2,
     level: "Beginner - Intermediate",
     duration: "20 Week",
-    href: "/course2",
+    href: "/1",
   },
   {
     id: 3,
@@ -34,7 +35,7 @@ const courses = [
     image: c3,
     level: "Intermediate - Advanced",
     duration: "12 Week",
-    href: "/course3",
+    href: "/1",
   },
   {
     id: 4,
@@ -44,7 +45,7 @@ const courses = [
     image: c4,
     level: "Advanced",
     duration: "8 Week",
-    href: "/course4",
+    href: "/1",
   },
 ];
 
@@ -58,7 +59,7 @@ export default function FeaturedCourses() {
           </h1>
 
           <h1 className="text-[#F1F1F1] font-medium text-sm sm:text-base lg:text-xl leading-[40px] font-Poppins">
-            <a href="/courses">All courses →</a>
+            <Link href="/courses">All courses →</Link>
           </h1>
         </div>
 

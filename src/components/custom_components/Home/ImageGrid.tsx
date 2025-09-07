@@ -1,155 +1,193 @@
-import Image from "next/image";
-import React from "react";
+'use client';
 
-const images = [
-  // Replace these URLs with your own images if needed
-  "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
-  "https://images.unsplash.com/photo-1465101046530-73398c7f28ca",
-  "https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
-  "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429",
-  "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99",
-  "https://images.unsplash.com/photo-1465101046530-73398c7f28ca",
-];
+import Image from 'next/image';
+import { motion } from 'framer-motion';
 
-const ImageGrid = () => {
+interface StudentWork {
+  id: number;
+  image: string;
+  title: string;
+  student: string;
+}
+
+interface ImageGridProps {
+  studentWorks: StudentWork[];
+}
+
+const ImageCard = ({ work, className, index }: { work: StudentWork; className: string; index: number }) => {
   return (
-    <div className="relative pt-[20px] sm:pt-[50px]">
-      <div className="w-full flex flex-col gap-3">
-        <div className="flex flex-col">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {images.map((src, idx) => (
-              <div
-                key={idx}
-                className="overflow-hidden rounded-xl bg-gray-200 aspect-[4/3] "
-              >
-                <Image
-                  width={300}
-                  height={300}
-                  src={src}
-                  alt="Student artwork"
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-200"
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="flex flex-row gap-3">
-          <div className="w-4/12 rounded-xl">
-            <Image
-              width={300}
-              height={300}
-              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
-              alt="Student artwork"
-              className="object-cover w-full h-full hover:scale-105 transition-transform duration-200 rounded-xl max-h-[140px] max-w-[392px]"
-              loading="lazy"
-            />
-          </div>
-          <div className="w-8/12">
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 h-full">
-              {images.map((src, idx) => (
-                <div
-                  key={idx}
-                  className="overflow-hidden rounded-xl bg-gray-200 aspect-[4/3] h-full max-w-[122px]"
-                >
-                  <Image
-                    width={300}
-                    height={300}
-                    src={src}
-                    alt="Student artwork"
-                    className="object-cover w-full h-full hover:scale-105 transition-transform duration-200 "
-                    loading="lazy"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        <div className=" flex flex-row gap-3">
-          <div className="w-4/12 flex flex-col gap-3">
-            <div className="flex flex-row gap-3">
-              <div className="w-1/2 rounded-xl">
-                <Image
-                  width={300}
-                  height={300}
-                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
-                  alt="Student artwork"
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-200 rounded-xl max-h-[140px] max-w-[186px]"
-                  loading="lazy"
-                />
-              </div>
-              <div className="w-1/2 rounded-xl">
-                <Image
-                  width={300}
-                  height={300}
-                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
-                  alt="Student artwork"
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-200 rounded-xl max-h-[140px] max-w-[186px]"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-            <div className=" rounded-xl">
-              <Image
-                width={300}
-                height={300}
-                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
-                alt="Student artwork"
-                className="object-cover w-full h-full hover:scale-105 transition-transform duration-200 rounded-xl max-h-[140px] max-w-[392px]"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div className="">
-            <div className="grid grid-cols-3 gap-3 h-full">
-              {images.map((src, idx) => (
-                <div
-                  key={idx}
-                  className="overflow-hidden rounded-xl bg-gray-200 aspect-[4/3] h-full max-w-[120px]"
-                >
-                  <Image
-                    width={300}
-                    height={300}
-                    src={src}
-                    alt="Student artwork"
-                    className="object-cover w-full h-full hover:scale-105 transition-transform duration-200 "
-                    loading="lazy"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-           <div className="w-4/12 flex flex-col gap-3 relative left-2">
-            <div className="flex flex-row gap-3 h-full">
-              <div className="w-1/2 rounded-xl">
-                <Image
-                  width={300}
-                  height={300}
-                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
-                  alt="Student artwork"
-                  className="object-cover w-full hover:scale-105 transition-transform duration-200 rounded-xl h-full max-w-[186px]"
-                  loading="lazy"
-                />
-              </div>
-              <div className="w-1/2 rounded-xl">
-                <Image
-                  width={300}
-                  height={300}
-                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
-                  alt="Student artwork"
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-200 rounded-xl max-w-[186px]"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-           
-          </div>
+    <motion.div
+      className={`relative group cursor-pointer overflow-hidden rounded-lg ${className}`}
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      viewport={{ once: true }}
+      whileHover={{ scale: 1.02 }}
+    >
+      <div className="relative w-full h-full min-h-[200px]">
+        <Image
+          src={work.image}
+          alt={work.title}
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-110"
+          sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+        />
+        
+        {/* Overlay on hover */}
+        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        
+        {/* Content overlay */}
+        <div className="absolute bottom-0 left-0 right-0 p-3 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <h4 className="font-bold text-xs sm:text-sm mb-1">{work.title}</h4>
+          <p className="text-gray-300 text-xs">by {work.student}</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
-export default ImageGrid;
+export default function ImageGrid({ studentWorks }: ImageGridProps) {
+  return (
+    <section className="bg-white ">
+      <div className="container mx-auto px-0">
+        {/* Header */}
+        <motion.div
+          className="mb-6 sm:mb-8 lg:mb-12"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+             
+        </motion.div>
 
+        {/* Mobile Layout (sm and below) */}
+        <div className="block sm:hidden">
+          <div className="grid grid-cols-2 gap-3">
+            {studentWorks.slice(0, 8).map((work, index) => (
+              <ImageCard 
+                key={work.id}
+                work={work} 
+                className="aspect-square" 
+                index={index}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Tablet Layout (sm to lg) */}
+        <div className="hidden sm:block lg:hidden">
+          <div className="grid grid-cols-2 gap-2 auto-rows-[180px]">
+            {/* First row */}
+            <ImageCard work={studentWorks[0]} className="col-span-2 row-span-2" index={0} />
+            <ImageCard work={studentWorks[1]} className="col-span-1 row-span-1" index={1} />
+            <ImageCard work={studentWorks[2]} className="col-span-1 row-span-1" index={2} />
+            
+            {/* Second row */}
+            <ImageCard work={studentWorks[3]} className="col-span-1 row-span-1" index={3} />
+            <ImageCard work={studentWorks[4]} className="col-span-1 row-span-1" index={4} />
+            
+            {/* Third row */}
+            <ImageCard work={studentWorks[5]} className="col-span-2 row-span-1" index={5} />
+            <ImageCard work={studentWorks[6]} className="col-span-1 row-span-1" index={6} />
+            <ImageCard work={studentWorks[7]} className="col-span-1 row-span-1" index={7} />
+          </div>
+        </div>
+
+        {/* Desktop Layout (lg and above) */}
+        <div className="hidden lg:block">
+          <div className="grid grid-cols-12 gap-[10px] auto-rows-[130px]">
+            {/* Large left image - spans 3 columns, 3 rows */}
+            <ImageCard 
+              work={studentWorks[0]} 
+              className="col-span-3 row-span-3" 
+              index={0}
+            />
+            {/* Top middle square - spans 3 columns, 2 rows */}
+            <ImageCard 
+              work={studentWorks[1]} 
+              className="col-span-3 row-span-2" 
+              index={1}
+            />
+            {/* Top right wide rectangle - spans 3 columns, 1 rows */}
+            <ImageCard 
+              work={studentWorks[2]} 
+              className="col-span-4 row-span-1" 
+              index={2}
+            />
+            {/* Top far right portrait - spans 2 columns, 1 rows */}
+            <ImageCard 
+              work={studentWorks[3]} 
+              className="col-span-2 row-span-2" 
+              index={3}
+            />
+            {/* Second row middle - spans 2 columns, 1 rows */}
+            <ImageCard 
+              work={studentWorks[4]} 
+              className="col-span-2 row-span-1" 
+              index={4}
+            />
+            {/* Second row middle-right - spans 2 columns, 1 rows */}
+            <ImageCard 
+              work={studentWorks[5]} 
+              className="col-span-2 row-span-1" 
+              index={5}
+            />
+            {/* Second row right - spans 2 columns, 1 rows */}
+            <ImageCard 
+              work={studentWorks[6]} 
+              className="col-span-2 row-span-2" 
+              index={6}
+            />
+            {/* Second row far right - spans 2 columns, 2 rows */}
+            <ImageCard 
+              work={studentWorks[7]} 
+              className="col-span-4 row-span-2" 
+              index={7}
+            />
+            {/* Bottom left under main image - spans 5 columns, 2 rows */}
+            <ImageCard 
+              work={studentWorks[8]} 
+              className="col-span-3 row-span-1" 
+              index={8}
+            />
+            {/* Bottom middle - spans 2 columns, 2 rows */}
+            <ImageCard 
+              work={studentWorks[9]} 
+              className="col-span-3 row-span-1" 
+              index={9}
+            />
+            {/* Bottom wide section - spans 3 columns, 1 rows */}
+            <ImageCard 
+              work={studentWorks[10]} 
+              className="col-span-3 row-span-3" 
+              index={10}
+            />    
+
+             {/* Bottom wide section - spans 3 columns, 1 rows */}
+            <ImageCard 
+              work={studentWorks[11]} 
+              className="col-span-2 row-span-2" 
+              index={10}
+            />    
+             {/* Bottom wide section - spans 3 columns, 1 rows */}
+            <ImageCard 
+              work={studentWorks[12]} 
+              className="col-span-4 row-span-2" 
+              index={10}
+            />    
+             {/* Bottom wide section - spans 3 columns, 1 rows */}
+            <ImageCard 
+              work={studentWorks[13]} 
+              className="col-span-3 row-span-2" 
+              index={10}
+            />     {/* Bottom wide section - spans 3 columns, 1 rows */}
+           
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
