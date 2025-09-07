@@ -38,7 +38,7 @@ export default function Home() {
 <section className="relative bg-auto bg-bottom bg-[#ffffff] bg-no-repeat h-auto w-full pt-[60px] pb-[120px] px-8">
 
 
-    <div className="relative z-10 items-center justify-between gap-[15px] max-w-[1200px] mx-auto w-full h-full">
+    <div className="relative z-10 items-center justify-between gap-[15px] max-w-7xl mx-auto w-full h-full">
         <div className="flex flex-col gap-3 justify-between w-full">
           <span className="text-[#000] text-3xl md:text4xl lg:text-5xl">
             Student Showcase.

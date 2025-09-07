@@ -9,32 +9,32 @@ const Paths = [
     id: 1,
     title: "Art & Illustration",
     image: P1,
-    href: "/1",
+    href: "/courses/art-and-Illustration",
   },
   {
     id: 2,
     title: "3D & Game Art",
     image: P2,
-    href: "/2",
+    href: "/courses/3d-and-game-art",
   },
   {
     id: 3,
     title: "Motion & VFX",
     image: P3,
-    href: "/3",
+    href: "/courses/motion-and-vfx",
   },
   {
     id: 4,
     title: "CAD Design",
     image: P4,
-    href: "/4",
+    href: "/courses/cad-design",
   },
 ];
 
 export default function FindYourPath() {
   return (
     <section className="relative bg-auto bg-bottom bg-[#ffffff] bg-no-repeat h-auto w-full pt-[60px] pb-[120px] px-8">
-      <div className="relative z-10 items-center justify-between gap-[15px] max-w-[1200px] mx-auto w-full h-full">
+      <div className="relative z-10 items-center justify-between gap-[15px] max-w-7xl mx-auto w-full h-full">
         {/* Heading */}
         <div className="flex justify-between w-full">
           <h1 className="text-[#000] font-bold text-2xl md:text-3xl lg:text-4xl leading-[40px]">
@@ -49,7 +49,7 @@ export default function FindYourPath() {
 
         {/* Grid of Cards */}
         <div className="relative pt-[20px] sm:pt-[50px]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
             {Paths.map((path) => (
               <PathCard
                 key={path.id}

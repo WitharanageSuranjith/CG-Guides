@@ -189,7 +189,7 @@ export default function Testimonials({
             {/* Testimonial Card */}
             <motion.div
               key={currentTestimonial}
-              className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 "
+              className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
@@ -198,8 +198,8 @@ export default function Testimonials({
                 {/* Avatar */}
                 <div className="flex-shrink-0">
                   <Image
-                    src={testimonials[currentTestimonial].avatar}
-                    alt={testimonials[currentTestimonial].name}
+                    src={testimonials[currentTestimonial]?.avatar}
+                    alt={testimonials[currentTestimonial]?.name}
                     width={80}
                     height={80}
                     className="w-20 h-20 rounded-full object-cover"
@@ -212,21 +212,21 @@ export default function Testimonials({
                   <div className="mb-4">
                     <div className="flex items-center space-x-2 mb-2">
                       <span className="text-white font-semibold text-lg">
-                        {testimonials[currentTestimonial].rating} Rating
+                        {testimonials[currentTestimonial]?.rating} Rating
                       </span>
                       <span className="text-gray-400">|</span>
                       <span className="text-gray-400 text-sm">
-                        {testimonials[currentTestimonial].timeAgo}
+                        {testimonials[currentTestimonial]?.timeAgo}
                       </span>
                     </div>
                     <h4 className="text-white font-semibold text-xl">
-                      {testimonials[currentTestimonial].name}
+                      {testimonials[currentTestimonial]?.name}
                     </h4>
                   </div>
 
                   {/* Review Text */}
                   <p className="text-gray-300 leading-relaxed text-base">
-                    {testimonials[currentTestimonial].review}
+                    {testimonials[currentTestimonial]?.review}
                   </p>
                 </div>
               </div>

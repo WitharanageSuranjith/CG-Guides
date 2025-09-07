@@ -39,11 +39,11 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`z-50 flex items-center px-[32px] py-6 fixed w-full ${
+      className={`z-50 flex items-center px-8  py-6 fixed w-full ${
         scrolled ? 'bg-[#000000ef]' : 'bg-[#000000ef]/90 backdrop-blur-sm'
       } shadow-md text-white h-[80px] transition-all duration-300`}
     >
-      <div className="flex items-center w-full max-w-[1200px] mx-auto">
+      <div className="flex items-center w-full max-w-7xl mx-auto">
         {/* Logo */}
         <div className="flex items-center mr-auto gap-10">
           <Link href="/" className="block">

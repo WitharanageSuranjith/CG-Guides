@@ -21,6 +21,8 @@ export default function CourseCard({ course }: { course: Course }) {
   return (
     <Link href={course.href} className="w-full">
       <div className="bg-white w-full md:h-[500px] rounded-2xl flex flex-col justify-between overflow-hidden hover:scale-105 duration-300">
+     
+     
         <Image
           src={imageSrc}
           alt="Course Thumbnail"
@@ -28,10 +30,12 @@ export default function CourseCard({ course }: { course: Course }) {
           width={400}
           height={300}
           {...(typeof course.image !== 'string' && {
-            placeholder: "blur",
-            blurDataURL: course.image.blurDataURL,
+            
           })}
         />
+
+
+
         <div className="px-[15px] flex flex-col flex-grow">
           <h1 className="text-[#000] text-[20px] font-semibold font-Poppins leading-[25px]">
             {course.title}

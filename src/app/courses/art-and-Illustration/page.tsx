@@ -3,34 +3,28 @@
 import React from "react";
 import CourseCard from "@/components/custom_components/Card/CourseCard";
 import CourseCoverSection from "@/components/custom_components/Course/CoursePost/CourseCoverSection";
-import heroImg from "@/assets/images/Background/course-bg.jpg";
+import heroImg from "@/assets/images/Background/art-cover.png";
 import { courses } from "@/data/courses";
 
 type CourseCategory =
-  | 'all'
   | 'art'
-  | '3d'
+  | 'drawing'
+  | 'editing'
+  | 'comic'
   | 'character'
-  | 'game'
-  | 'environment'
-  | 'product'
-  | 'video'
-  | 'architectural';
+  | 'storytelling'
 
 export default function HomePage() {
-  const [activeFilter, setActiveFilter] = React.useState<CourseCategory>('all');
+  const [activeFilter, setActiveFilter] = React.useState<CourseCategory>('art');
   const [filteredCourses, setFilteredCourses] = React.useState(courses);
 
   const filterOptions = [
-    { id: "all", label: "All", active: activeFilter === 'all' },
-    { id: "art", label: "Art & Illustration", active: activeFilter === 'art' },
-    { id: "3d", label: "3D & Animation", active: activeFilter === '3d' },
-    { id: "character", label: "Character Design", active: activeFilter === 'character' },
-    { id: "game", label: "Game Arts", active: activeFilter === 'game' },
-    { id: "environment", label: "Environment", active: activeFilter === 'environment' },
-    { id: "product", label: "Product Design", active: activeFilter === 'product' },
-    { id: "video", label: "Video & VFX", active: activeFilter === 'video' },
-    { id: "architectural", label: "Architectural", active: activeFilter === 'architectural' },
+    { id: "art", label: "All", active: activeFilter === 'art' },
+    { id: "drawing", label: "Drawing Foundation", active: activeFilter === 'drawing' },
+    { id: "editing", label: "Image Editing", active: activeFilter === 'editing' },
+    { id: "comic", label: "Comic & Cartoon", active: activeFilter === 'comic' },
+    { id: "character", label: "Character Illustration", active: activeFilter === 'character' },
+    { id: "storytelling", label: "Storytelling", active: activeFilter === 'storytelling' },
   ];
 
   const handleFilterChange = (id: string) => {

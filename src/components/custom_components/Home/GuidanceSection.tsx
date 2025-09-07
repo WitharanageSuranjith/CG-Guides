@@ -14,7 +14,7 @@ export default function GuidanceSection() {
     >
       {/* Overlay */}
       <div className="absolute inset-0 z-0" />
-      <div className="relative z-10 max-w-[1200px] w-full flex flex-col lg:flex-row gap-8 items-center justify-between">
+      <div className="relative z-10 max-w-7xl w-full flex flex-col lg:flex-row gap-8 items-center justify-between">
         {/* Left: Text & Form */}
         <div className="flex-1 max-w-[600px] text-white">
           <h1 className=" font-semibold text-[#E55A2B] font-Poppins - 
@@ -83,8 +83,23 @@ export default function GuidanceSection() {
           </form>
         </div>
         {/* Right: Placeholder Rectangle */}
-        <div className="flex-1 hidden items-center justify-center w-full min-h-[350px] h-[350px] lg:h-[420px] bg-[#555]/80 rounded-3xl max-w-[600px]  lg:flex">
-          {/* Placeholder for future content or illustration */}
+        <div className="flex-1 hidden items-center justify-center w-full min-h-[350px] h-[350px] lg:h-[420px]  rounded-3xl max-w-[600px]  lg:flex">
+                
+        <div className="lg:w-[100%]  lg:max-w-[100%]    max-w-[600px]   lg:pl-[80px w-full">
+          <div className="aspect-video">
+            <iframe
+              className="w-full h-full rounded-[10px] aspect-video"
+              src="https://www.youtube.com/embed/bnNDZLE8ORQ"
+              title="YouTube Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+           </div>
+
+
+
         </div>
       </div>
     </section>

@@ -10,7 +10,7 @@ interface PathCardProps {
 export default function PathCard({ href, title, image }: PathCardProps) {
   return (
     <Link href={href} className="w-full">
-      <div className="relative w-full h-[320px] rounded-[15px] overflow-hidden group">
+      <div className="relative w-full h-[350px] rounded-[15px] overflow-hidden group">
         {/* Image */}
         <Image
           src={image}
@@ -22,9 +22,6 @@ export default function PathCard({ href, title, image }: PathCardProps) {
         {/* Bottom Dark Gradient */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
         <div className="absolute inset-0 bg-black/15 group-hover:bg-black/5 transition-colors"></div>
-
-
-
 
 
         {/* Bottom-Center Title */}
