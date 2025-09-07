@@ -23,7 +23,7 @@ const FilterHeroSection: React.FC<FilterHeroSectionProps> = ({
   onFilterChange,
 }) => {
   return (
-    <section className="relative bg-black overflow-hidden h-[450px] flex flex-col justify-end pb-10">
+    <section className="relative bg-black overflow-hidden h-[520px] flex flex-col justify-end pb-10">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
