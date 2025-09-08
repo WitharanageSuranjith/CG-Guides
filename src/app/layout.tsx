@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "CG Guide",
+  title: "CG Guides",
   description: "Online Courses Platform in Art, Games & VFX",
 };
 
