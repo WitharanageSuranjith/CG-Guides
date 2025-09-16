@@ -17,17 +17,17 @@ export default function GuidanceSection() {
       <div className="relative z-10 max-w-7xl w-full flex flex-col lg:flex-row gap-8 items-center justify-between">
         {/* Left: Text & Form */}
         <div className="flex-1 max-w-[600px] text-white">
-          <h1 className=" font-semibold text-[#E55A2B] font-Poppins - 
+          <h1 className=" font-semibold text-primary font-Poppins - 
           text-[24px]  sm:text-[24px] md:text-[24px] lg:text-[34px] xl:text-[40px]
           leading-[30px]  sm:leading-[30px] md:leading-[30px] lg:leading-[42.5px] xl:leading-[50px]  ">
             Need guidance?
             <br />
-            <span className="text-[#FF6B35]">Were here to help.</span>
+            <span className="text-primary">Were here to help.</span>
           </h1>
           <p className="
           
           
-           text-[#fff]  mt-[5px] font-Poppins -
+           text-white  mt-[5px] font-Poppins -
             text-[11px] xs:text-[12px] lg:text-[14px] xl:text-[18px] 
             leading-[22px] xs:leading-[24px] lg:leading-[28px] xl:leading-[36px]
           
@@ -45,7 +45,7 @@ export default function GuidanceSection() {
                 <input
                   type="text"
                   placeholder="What is your first name?"
-                  className="w-full rounded-md bg-[#333]/80 text-white px-4 py-3 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#FF6B35]"
+                  className="w-full rounded-md bg-[#333]/80 text-white px-4 py-3 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
               <div className="flex-1">
@@ -55,7 +55,7 @@ export default function GuidanceSection() {
                 <input
                   type="text"
                   placeholder="What is your last name?"
-                  className="w-full rounded-md bg-[#333]/80 text-white px-4 py-3 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#FF6B35]"
+                  className="w-full rounded-md bg-[#333]/80 text-white px-4 py-3 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
             </div>
@@ -64,7 +64,7 @@ export default function GuidanceSection() {
               <input
                 type="email"
                 placeholder="We will contact you at this email"
-                className="w-full rounded-md bg-[#333]/80 text-white px-4 py-3 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#FF6B35]"
+                className="w-full rounded-md bg-[#333]/80 text-white px-4 py-3 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
               />
             </div>
 
@@ -73,7 +73,7 @@ export default function GuidanceSection() {
                <div className="pt-[20px]">
                <Link
               href="/login"
-              className="px-6 py-2 bg-[#E55A2B] text-white rounded-[6px] hover:text-[#000] font-medium transition font-Poppins"
+              className="px-6 py-2 bg-primary text-white rounded-[6px] hover:text-black font-medium transition font-Poppins"
             >
               CONTINUE
             </Link>

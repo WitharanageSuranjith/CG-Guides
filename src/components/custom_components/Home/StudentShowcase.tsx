@@ -35,15 +35,15 @@ export default function Home() {
 
  
   
-<section className="relative bg-auto bg-bottom bg-[#ffffff] bg-no-repeat h-auto w-full pt-[60px] pb-[120px] px-8">
+<section className="relative bg-auto bg-bottom bg-light bg-no-repeat h-auto w-full pt-[60px] pb-[120px] px-8">
 
 
     <div className="relative z-10 items-center justify-between gap-[15px] max-w-7xl mx-auto w-full h-full">
         <div className="flex flex-col gap-3 justify-between w-full">
-          <span className="text-[#000] text-3xl md:text4xl lg:text-5xl">
+          <span className="text-3xl md:text-4xl font-semibold text-black leading-tight text-center xl:text-start font-Poppins">
             Student Showcase.
           </span>
-          <span className="text-[#000] font-medium text-sm sm:text-base lg:text-xl">
+          <span className="text-black font-medium text-sm sm:text-base lg:text-xl mb-4">
             From novice creatives looking to jumpstart their career to seasoned
             pros adding to their toolkit, our students produce thoughtful,
             mind-blowing work. We want the world to see it.

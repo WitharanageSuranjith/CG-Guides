@@ -69,11 +69,11 @@ export default function CourseHero({
   pricing,
 }: CourseHeroProps) {
   return (
-    <section className="bg-black text-white font-Poppins">
-      <div className="container mx-auto px-4 py-6 lg:py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16">
+    <section className="bg-dark text-white font-Poppins p-8">
+      <div className="max-w-7xl mx-auto px-4 py-6 lg:py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-16">
           {/* Left Column - Image and Title */}
-          <div className="space-y-4 lg:space-y-6">
+          <div className="space-y-4 lg:space-y-6 lg:col-span-3 ">
             {/* Character Image */}
             <div className="relative">
               <Image
@@ -88,20 +88,20 @@ export default function CourseHero({
 
             {/* Title Section */}
             <div className="space-y-3 lg:space-y-4">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl leading-tight">
-                <span className="text-orange-500">{title}</span>
+              <h1 className="font-Poppins font-normal text-3xl sm:text-3xl lg:text-[38px] leading-tight">
+                <span className="text-primary">{title}</span>
               </h1>
-              <h2 className="text-xl sm:text-2xl lg:text-3xl text-white">
+              <h2 className="text-[22px] sm:text-2xl lg:text-[22px] text-white">
                 {subtitle}
               </h2>
-              <p className="text-gray-300 text-base lg:text-xl leading-relaxed">
+              <p className="text-white/75 text-[22px] lg:text-[18px] leading-relaxed">
                 {description}
               </p>
             </div>
           </div>
 
           {/* Right Column - Course Details */}
-          <div className="space-y-4 lg:space-y-6">
+          <div className="space-y-4 lg:space-y-6 lg:col-span-2 text-white/80">
             {/* Course Info Grid */}
             <div className="space-y-2">
               {courseInfo.map((item, index) => (
@@ -113,7 +113,7 @@ export default function CourseHero({
                 />
               ))}
             </div>
-
+           <div className=" text-white/50">
             {/* Assignment Section */}
             <div className="mt-6 lg:mt-8">
               <h3 className="text-lg lg:text-xl font-bold text-white mb-2 lg:mb-3">{assignment.title}</h3>
@@ -151,12 +151,18 @@ export default function CourseHero({
                   )}
                 </div>
                 
-                <button className="bg-orange-500 hover:bg-orange-600 text-black font-bold py-2 lg:py-3 px-6 lg:px-8 rounded-lg transition-colors duration-200 flex items-center space-x-2 w-full sm:w-auto justify-center">
+                
+                <a href="https://wa.me/+12568236836" target="_blank" rel="noopener noreferrer">                
+                <button className="bg-primary hover:bg-primary/80 text-black font-bold py-2 lg:py-3 px-6 lg:px-8 rounded-lg transition-colors duration-200 flex items-center space-x-2 w-full sm:w-auto justify-center">
                   <FaWhatsapp className="w-4 h-4 lg:w-6 lg:h-6" />
                   <span className="text-sm lg:text-base">WhatsApp</span>
-                </button>
+                </button> </a>
               </div>
+          
+          
             </div>
+            </div>
+
           </div>
         </div>
       </div>

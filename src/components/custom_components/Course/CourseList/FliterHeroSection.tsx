@@ -36,10 +36,10 @@ const FilterHeroSection: React.FC<FilterHeroSectionProps> = ({
       {/* Content */}
       <div className="relative z-10 mx-auto w-full px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col gap-3">
-          <h1 className="text-3xl font-bold text-white tracking-tight">
+          <h1 className="text-3xl font-bold text-white tracking-tight  xl:text-[40px]">
             {title}
           </h1>
-          <p className="text-lg text-gray-300">
+          <p className="text-white/90 font-Poppins text-[22px]">
             {subtitle}
           </p>
           
@@ -54,7 +54,7 @@ const FilterHeroSection: React.FC<FilterHeroSectionProps> = ({
                   className={`px-4 text-sm font-medium rounded-full transition-all ${
                     option.active 
                       ? "bg-white text-black hover:bg-gray-100 shadow-lg" 
-                      : "bg-transparent text-gray-200 hover:bg-white/10 hover:text-white border-0"
+                      : "bg-transparent text-white/80 hover:bg-white/10 hover:text-white border-0"
                   }`}
                 >
                   {option.label}

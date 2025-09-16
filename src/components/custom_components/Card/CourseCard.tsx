@@ -20,7 +20,7 @@ export default function CourseCard({ course }: { course: Course }) {
 
   return (
     <Link href={course.href} className="w-full">
-      <div className="bg-white w-full md:h-[500px] rounded-2xl flex flex-col justify-between overflow-hidden hover:scale-105 duration-300">
+      <div className="bg-light w-full md:h-[500px] rounded-2xl flex flex-col justify-between overflow-hidden hover:scale-105 duration-300">
      
      
         <Image
@@ -37,14 +37,14 @@ export default function CourseCard({ course }: { course: Course }) {
 
 
         <div className="px-[15px] flex flex-col flex-grow">
-          <h1 className="text-[#000] text-[20px] font-semibold font-Poppins leading-[25px]">
+          <h1 className="text-black text-[20px] font-semibold font-Poppins leading-[25px]">
             {course.title}
           </h1>
-          <p className="text-[#000] text-[12px] font-medium leading-[13px] pt-[5px]">
+          <p className="text-black text-[12px] font-medium leading-[13px] pt-[5px]">
             {course.description}
           </p>
         </div>
-        <div className="border-t border-[#ccc] w-full my-[8px]" />
+        <div className="border-t border-black/30 w-full my-[8px]" />
         <div className="flex justify-between items-center text-black px-[15px] mb-[12px] mt-[6px] font-Poppins">
           <h3 className="text-[13px] font-medium">{course.level}</h3>
           <span className="text-[12px] font-medium border border-black px-[8px] py-[1px] rounded-full h-[20px] flex items-center justify-center whitespace-nowrap">

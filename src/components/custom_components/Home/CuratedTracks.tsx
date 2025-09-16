@@ -11,7 +11,7 @@ const cards = [
 
 export default function CuratedTracks() {
   return (
-    <section className="w-full py-12 px-8">
+    <section className="  bg-light w-full py-12 px-8">
       <div className="max-w-7xl mx-auto flex flex-col xl:flex-row items-center xl:items-start gap-8 ">
         {/* Left: Text */}
         <div className="flex-1 min-w-[320px] xl:max-w-[480px]">
@@ -29,7 +29,7 @@ export default function CuratedTracks() {
           {cards.map((card, idx) => (
             <div
               key={idx}
-              className="overflow-hidden  w-full sm:w-[220px] h-[400px] sm:h-[300px] bg-white flex items-center justify-center"
+              className="overflow-hidden  w-full sm:w-[220px] h-[400px] sm:h-[300px] flex items-center justify-center"
             >
               <Image
                 src={card.image}

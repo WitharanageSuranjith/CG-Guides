@@ -47,13 +47,17 @@ const config: Config = {
         "xl": "1280px",
         "2xl": "1536px",
       },
-      colors: {
+          colors: {
         transparent: "transparent",
         current: "currentColor",
-        white: "#ffffff",
-        black: "#191919"
-      
-    
+        
+        primary: "#e55a2b",      // brand orange   
+        white: "#fff", //  white
+        black: "#000", // black
+        light: "#fff",      // light background
+        dark: "#121212",       // dark background
+
+
       },
     },
   },

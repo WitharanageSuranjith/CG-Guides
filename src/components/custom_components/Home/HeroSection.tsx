@@ -28,14 +28,14 @@ export default function HeroSection() {
             Innovative online education for a successful <br /> career in the creative industries.
           </p>
 
-          <h2 className="text-[#FF6B35] text-[18px] font-bold leading-[30px] font-Poppins">
+          <h2 className="text-primary text-[18px] font-bold leading-[30px] font-Poppins">
             First time around here?
           </h2>
 
           <div className="flex items-center gap-6 ">
             <Link
               href="/login"
-              className="px-6 py-2 bg-[#E55A2B] text-white rounded-[6px] hover:text-[#000] font-medium transition font-Poppins text-[14px] xs:text-[16px]"
+              className="px-6 py-2 bg-primary text-white rounded-[6px] hover:text-black font-medium transition font-Poppins text-[14px] xs:text-[16px]"
             >
               START HERE
             </Link>

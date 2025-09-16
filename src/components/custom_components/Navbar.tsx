@@ -16,10 +16,11 @@ export default function Navbar() {
   };
 
   const navItems = [
-    { id: "courses", label: "Our Courses", path: "/courses" },
-    { id: "community", label: "Community", path: "#" },
+    { id: "courses", label: "All Courses", path: "/courses" },
     { id: "academies", label: "Academies", path: "#" },
-    { id: "blog", label: "Blog", path: "#" },
+    { id: "community", label: "Community", path: "#" }, 
+    { id: "blog", label: "Blog", path: "#" },  
+     
   ];
 
   useEffect(() => {
@@ -60,7 +61,7 @@ export default function Navbar() {
             <ul className="hidden md:flex gap-4 sm:gap-6 lg:gap-10 text-white font-[500] uppercase text-sm lg:text-base font-Poppins">
               {navItems.map((item) => (
                 <li key={item.id}>
-                  <Link className="hover:text-[#E55A2B] transition-colors" href={item.path}>
+                  <Link className="hover:text-primary transition-colors" href={item.path}>
                     {item.label}
                   </Link>
                 </li>
@@ -73,7 +74,7 @@ export default function Navbar() {
         <div className="flex items-center ml-auto gap-4">
           <Link
             href="/log-in"
-            className="px-6 py-[6px] bg-white text-black rounded-full hover:bg-[#E55A2B] hover:text-white font-medium transition-colors hidden md:block font-Poppins"
+            className="px-6 py-[6px] bg-white text-black rounded-full hover:bg-primary hover:text-white font-medium transition-colors hidden md:block font-Poppins"
           >
             Login
           </Link>
@@ -104,7 +105,7 @@ export default function Navbar() {
               <li key={item.id}>
                 <Link
                   href={item.path}
-                  className="block py-2 hover:text-[#E55A2B] transition-colors"
+                  className="block py-2 hover:text-primary transition-colors"
                   onClick={toggleMenu}
                 >
                   {item.label}
@@ -114,7 +115,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/log-in"
-                className="block px-6 py-[6px] bg-white text-black rounded-full hover:bg-[#E55A2B] hover:text-white font-medium transition-colors w-fit font-Poppins"
+                className="block px-6 py-[6px] bg-white text-black rounded-full hover:bg-primary hover:text-white font-medium transition-colors w-fit font-Poppins"
                 onClick={toggleMenu}
               >
                 Login

@@ -91,7 +91,7 @@ const course01: Course = {
       {
         id: 1,
         name: 'Andy Agou',
-        avatar: '/api/placeholder/80/80',
+        avatar: '/Website/maniacarta-blender.jpg',
         rating: 5,
         timeAgo: '2 months ago',
         review:
@@ -100,7 +100,7 @@ const course01: Course = {
       {
         id: 2,
         name: 'Sarah Johnson',
-        avatar: '/api/placeholder/80/80',
+        avatar: '/Website/76d47d04ed4c782456d9fd1c051e4a8c.jpg',
         rating: 5,
         timeAgo: '1 month ago',
         review:
@@ -109,7 +109,7 @@ const course01: Course = {
       {
         id: 3,
         name: 'Mike Chen',
-        avatar: '/api/placeholder/80/80',
+        avatar: '/Website/pp.jpg',
         rating: 4,
         timeAgo: '3 weeks ago',
         review:
@@ -131,7 +131,7 @@ const course01: Course = {
     },
   },
   studentResults: {
-    title: 'Student results',
+    title: 'Student Results',
     description:
       'From novice creatives looking to jumpstart their career to seasoned pros adding to their toolkit, our students produce thoughtful, mind-blowing work. We want the world to see it.',
     studentWorks: [

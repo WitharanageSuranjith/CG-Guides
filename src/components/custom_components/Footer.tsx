@@ -19,7 +19,7 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ className = "" }) => {
   return (
     <footer
-      className={`bg-[#121212] w-full flex justify-center text-white py-12 px-8 ${className}`}
+      className={`bg-[#000000ef] w-full flex justify-center text-white py-12 px-8 ${className}`}
     >
       <div className="max-w-7xl flex flex-col justify-center items-center w-full">
         <div className=" flex flex-col sm:flex-row w-full gap-10 sm:gap-0">

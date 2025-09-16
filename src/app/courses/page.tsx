@@ -2,7 +2,7 @@
 
 import React from "react";
 import CourseCard from "@/components/custom_components/Card/CourseCard";
-import CourseCoverSection from "@/components/custom_components/Course/CoursePost/CourseCoverSection";
+import CourseHeroSection from "@/components/custom_components/Course/CourseList/FliterHeroSection";
 import heroImg from "@/assets/images/Background/course-bg.jpg";
 import { courses } from "@/data/courses";
 
@@ -44,24 +44,24 @@ export default function HomePage() {
   };
 
   return (
-    <main className="flex flex-col min-h-screen">
-      <CourseCoverSection
+    <main className="flex flex-col min-h-screen bg-dark ">
+      <CourseHeroSection
         backgroundImage={heroImg.src}
         title={
           <>
-            All <span className="text-orange-500">Courses</span>
+            All <span className="text-pretty">Courses</span>
           </>
         }
         subtitle="Gain the skills and knowledge you need to make an impact."
         filterOptions={filterOptions}
         onFilterChange={handleFilterChange}
       />
-      <section className="bg-[rgba(24,24,24,0.98)] py-12 px-8">
+      <section className="bg-dark py-12 px-8">
         <div className="max-w-7xl mx-auto  relative z-10 items-center justify-between gap-[15px]  w-full h-full">
           {filteredCourses.length === 0 ? (
-            <div className="text-center py-28">
+            <div className="text-center py-80">
               <h3 className="text-2xl font-bold text-white">No courses available</h3>
-              <p className="text-gray-400 mt-2">
+              <p className="text-white/80 mt-2">
                 We couldn&apos;t find any courses in this category. Try another filter.
               </p>
             </div>
