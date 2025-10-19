@@ -6,7 +6,7 @@ export interface Course {
   title: string;
   description: string;
   image: StaticImageData | string;
-  courseCoverImg: any;
+  courseCoverImg: { src: string; alt?: string; width?: number; height?: number };
   level: string;
   duration: string;
   href: string;
