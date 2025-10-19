@@ -7,6 +7,7 @@ const course01: Course = {
   title: "VFX and Cinematic Storytelling",
   description: "An 8-week course focused on creating stronger environment paintings based on a narrative of the student's choice",
   image: c9,
+  courseCoverImg: c9,
   level: "Intermediate",
   duration: "18 Week",
   href: "/courses/9",

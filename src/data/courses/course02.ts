@@ -7,6 +7,7 @@ const course01: Course = {
   title: "Blender 3D Environment Painting and Design",
   description: "An 8-week course focused on creating stronger environment paintings based on a narrative of the student's choice",
   image: c2,
+  courseCoverImg: c2,
   level: "Intermediate",
   duration: "12 Week",
   href: "/courses/2",

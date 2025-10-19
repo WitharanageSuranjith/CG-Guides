@@ -14,7 +14,7 @@ interface FilterHeroSectionProps {
   onFilterChange?: (id: string) => void;
 }
 
-const FilterHeroSection: React.FC<FilterHeroSectionProps> = ({
+const CourseCoverSection: React.FC<FilterHeroSectionProps> = ({
   backgroundImage,
   title,
   subtitle,
@@ -48,4 +48,4 @@ const FilterHeroSection: React.FC<FilterHeroSectionProps> = ({
   );
 };
 
-export default FilterHeroSection;
+export default CourseCoverSection;

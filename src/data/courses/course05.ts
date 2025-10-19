@@ -7,6 +7,7 @@ const course01: Course = {
   title: "3D Product Animation in Blender",
   description: "An 8-week course focused on creating stronger environment paintings based on a narrative of the student's choice",
   image: c5,
+  courseCoverImg: c5,
   level: "Intermediate",
   duration: "16 Week",
   href: "/courses/5",

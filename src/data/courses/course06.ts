@@ -7,6 +7,7 @@ const course01: Course = {
   title: "Master Cinematic Storytelling in Blender",
   description: "An 8-week course focused on creating stronger environment paintings based on a narrative of the student's choice",
   image: c6,
+  courseCoverImg: c6,
   level: "Intermediate",
   duration: "10 Week",
   href: "/courses/6",

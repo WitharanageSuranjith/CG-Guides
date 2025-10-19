@@ -8,7 +8,6 @@ import CourseCurriculum from '@/components/custom_components/Course/CoursePost/C
 import Testimonials from '@/components/custom_components/Course/CoursePost/Testimonials';
 import StudentResults from '@/components/custom_components/Course/CoursePost/StudentResults';
 import CourseCoverSection from '@/components/custom_components/Course/CoursePost/CourseCoverSection';
-import heroImg from '@/assets/images/Background/course-bg.jpg';
 
 export default function CourseDetails() {
   const params = useParams<{ id: string }>();
@@ -28,7 +27,7 @@ export default function CourseDetails() {
   return (
     <div className="min-h-screen bg-black text-white">
       <CourseCoverSection
-        backgroundImage={heroImg.src}
+       backgroundImage={course.courseCoverImg.src}
         title={course.title}
         subtitle={course.description}
       />
