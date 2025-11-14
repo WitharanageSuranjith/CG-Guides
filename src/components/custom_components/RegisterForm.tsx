@@ -3,7 +3,7 @@
 import React, { useState, ChangeEvent } from "react";
 import { Eye, EyeOff } from "lucide-react";
 import Image from "next/image";
-import logo from "@/assets/images/logo/Logo.png";
+import logo from "@/assets/images/Logo/Logo.png";
 import Link from "next/link";
 
 const RegisterForm = () => {
