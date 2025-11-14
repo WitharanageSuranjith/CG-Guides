@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
 import Image from "next/image";
-import logo from "@/assets/images/Logo.png";
+import logo from "@/assets/images/Logo/Logo.png";
 import Link from "next/link";
 
 const LoginForm = () => {
@@ -16,7 +16,7 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="bg-[#1E1E1E] w-full max-w-2xl flex justify-center items-center rounded-2xl shadow-2xl">
+    <div className="bg-[#1E1E1E] w-full max-w-2xl flex justify-center items-center rounded-2xl shadow-2xl py-10">
       <div className=" rounded-2xl p-10 w-full max-w-md ">
         {/* Logo */}
         <div className="flex items-center justify-center mb-8">
@@ -24,7 +24,7 @@ const LoginForm = () => {
             <Image
               src={logo}
               alt="Logo"
-              className="w-[150px] lg:w-[200px] h-auto"
+              className="w-[150px] lg:w-[300px] h-auto"
               priority
             />
           </Link>
@@ -35,7 +35,7 @@ const LoginForm = () => {
           <h1 className="text-white text-2xl font-semibold mb-2">
             Log in to your Account
           </h1>
-          <p className="text-orange-500 text-sm">
+          <p className="text-primary text-sm">
             Welcome back, please enter your details.
           </p>
         </div>
@@ -51,7 +51,7 @@ const LoginForm = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full bg-gray-700 text-white rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+              className="w-full bg-[#303030] text-white rounded-lg px-4 py-3 focus:outline-none focus:ring-1 focus:ring-primary focus:border-transparent"
               required
             />
           </div>
@@ -66,7 +66,7 @@ const LoginForm = () => {
                 type={showPassword ? "text" : "password"}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full bg-gray-700 text-white rounded-lg px-4 py-3 pr-12 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                className="w-full bg-[#303030] text-white rounded-lg px-4 py-3 pr-12 focus:outline-none focus:ring-1 focus:ring-primary focus:border-transparent"
                 required
               />
               <button
@@ -86,13 +86,13 @@ const LoginForm = () => {
                 type="checkbox"
                 checked={rememberMe}
                 onChange={(e) => setRememberMe(e.target.checked)}
-                className="w-4 h-4 text-orange-500 bg-gray-700 border-gray-600 rounded focus:ring-orange-500 focus:ring-2"
+                className="w-4 h-4 text-primary bg-[#303030] border-[#303030] rounded focus:ring-primary focus:ring-1"
               />
               <span className="ml-2 text-white text-sm">Remember me</span>
             </label>
             <Link
               href="#"
-              className="text-white text-sm hover:text-orange-500 transition-colors"
+              className="text-white text-sm hover:text-primary transition-colors"
             >
               Forgot Password?
             </Link>
@@ -101,7 +101,7 @@ const LoginForm = () => {
           {/* Login Button */}
           <button
             onClick={handleSubmit}
-            className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-lg transition-colors duration-200"
+            className="w-full bg-primary hover:bg-white  hover:text-black text-white font-semibold py-3 rounded-lg transition-colors duration-200"
           >
             Log in
           </button>
@@ -145,7 +145,7 @@ const LoginForm = () => {
               <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
             </svg>
           </button>
-          <button className="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-gray-600 transition-colors">
+          <button className="w-12 h-12 bg-[#303030] rounded-lg flex items-center justify-center hover:bg-gray-600 transition-colors">
             <svg
               className="w-6 h-6 text-white"
               fill="currentColor"
@@ -161,7 +161,7 @@ const LoginForm = () => {
           Don&apos;t have an account?{" "}
           <Link
             href="/register"
-            className="text-orange-500 hover:text-orange-400 transition-colors"
+            className="text-primary hover:text-orange-400 transition-colors"
           >
             Sign Up
           </Link>

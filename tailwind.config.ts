@@ -51,7 +51,7 @@ const config: Config = {
         transparent: "transparent",
         current: "currentColor",
         
-        primary: "#e55a2b",      // brand orange   
+        primary: "#ff5b00",      // brand orange #e55a2b 
         white: "#fff", //  white
         black: "#000", // black
         light: "#fff",      // light background

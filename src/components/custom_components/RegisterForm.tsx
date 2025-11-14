@@ -3,7 +3,7 @@
 import React, { useState, ChangeEvent } from "react";
 import { Eye, EyeOff } from "lucide-react";
 import Image from "next/image";
-import logo from "@/assets/images/Logo.png";
+import logo from "@/assets/images/logo/Logo.png";
 import Link from "next/link";
 
 const RegisterForm = () => {
@@ -36,7 +36,7 @@ const RegisterForm = () => {
   };
 
   return (
-    <div className="bg-[#1E1E1E] max-w-2xl w-full justify-items-center shadow-2xl rounded-2xl relative ">
+    <div className="bg-[#1E1E1E] max-w-2xl w-full justify-items-center shadow-2xl rounded-2xl relative py-10 ">
       <div className="py-10 w-full max-w-[340px]">
         {/* Logo */}
         <div className="flex items-center justify-center mb-6">
@@ -45,7 +45,7 @@ const RegisterForm = () => {
               <Image
                 src={logo}
                 alt="Logo"
-                className="w-[150px] lg:w-[200px] h-auto"
+                className="w-[150px] lg:w-[300px] h-auto"
                 priority
               />
             </Link>
@@ -74,7 +74,7 @@ const RegisterForm = () => {
               name="fullName"
               value={formData.fullName}
               onChange={handleInputChange}
-              className="w-full bg-gray-700 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+              className="w-full bg-[#303030] text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-primary focus:border-transparent"
               required
             />
           </div>
@@ -89,7 +89,7 @@ const RegisterForm = () => {
               name="email"
               value={formData.email}
               onChange={handleInputChange}
-              className="w-full bg-gray-700 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+              className="w-full bg-[#303030] text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-primary focus:border-transparent"
               required
             />
           </div>
@@ -104,7 +104,7 @@ const RegisterForm = () => {
               name="mobileNumber"
               value={formData.mobileNumber}
               onChange={handleInputChange}
-              className="w-full bg-gray-700 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+              className="w-full bg-[#303030] text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-primary focus:border-transparent"
               required
             />
           </div>
@@ -120,7 +120,7 @@ const RegisterForm = () => {
                 name="password"
                 value={formData.password}
                 onChange={handleInputChange}
-                className="w-full bg-gray-700 text-white rounded-lg px-4 py-2 pr-12 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                className="w-full bg-[#303030] text-white rounded-lg px-4 py-2 pr-12 focus:outline-none focus:ring-1 focus:ring-primary focus:border-transparent"
                 required
               />
               <button
@@ -144,7 +144,7 @@ const RegisterForm = () => {
                 name="confirmPassword"
                 value={formData.confirmPassword}
                 onChange={handleInputChange}
-                className="w-full bg-gray-700 text-white rounded-lg px-4 py-2 pr-12 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                className="w-full bg-[#303030] text-white rounded-lg px-4 py-2 pr-12 focus:outline-none focus:ring-1 focus:ring-primary focus:border-transparent"
                 required
               />
               <button
@@ -164,13 +164,13 @@ const RegisterForm = () => {
               id="terms"
               checked={agreeToTerms}
               onChange={(e) => setAgreeToTerms(e.target.checked)}
-              className="w-4 h-4 text-orange-500 bg-gray-700 border-gray-600 rounded focus:ring-orange-500 focus:ring-2 mt-1"
+              className="w-4 h-4 text-orange-500 bg-[#303030] border-gray-600 rounded focus:ring-primary focus:ring-1 mt-1"
             />
             <label htmlFor="terms" className="ml-2 text-white text-sm">
               I have read and agree to the{" "}
               <Link
                 href="#"
-                className="text-orange-500 hover:text-orange-400 transition-colors underline"
+                className="text-primary hover:text-orange-500 transition-colors underline"
               >
                 Terms of Service
               </Link>
@@ -180,7 +180,7 @@ const RegisterForm = () => {
           {/* Get Started Button */}
           <button
             onClick={handleSubmit}
-            className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 rounded-lg transition-colors duration-200"
+            className="w-full bg-primary hover:bg-white  hover:text-black  text-white font-semibold py-2 rounded-lg transition-colors duration-200"
           >
             Get Started
           </button>
@@ -224,7 +224,7 @@ const RegisterForm = () => {
               <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
             </svg>
           </button>
-          <button className="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-gray-600 transition-colors">
+          <button className="w-12 h-12 bg-[#303030] rounded-lg flex items-center justify-center hover:bg-gray-600 transition-colors">
             <svg
               className="w-6 h-6 text-white"
               fill="currentColor"
